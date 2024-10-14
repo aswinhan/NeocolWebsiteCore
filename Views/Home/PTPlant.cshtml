@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewData["Title"] = "PT Plant Accessories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_NavBar" />
+
+<div id="banner-area" class="banner-area">
+    <img class="banner-area" src="~/img/banner/banner1.jpg">
+
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">@ViewBag.Title</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a>Our Process</a></li>
+                                <li class="breadcrumb-item"><a>Pre Treatment Plant</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div>
+
+    <!-- Banner text end -->
+</div><!-- Banner area end -->
+<!-- Process Section -->
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-3 col-lg-4">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h5 class="widget-title">Pre Treatment Plant</h5>
+                        <ul class="nav service-menu">
+                            <li ><a href="@Url.Action("DipType","Home")">Dip Type – (Automatic/Manual)</a></li>
+                            <li><a href="@Url.Action("SprayType","Home")">Spray Types</a></li>
+                            <li class="active"><a href="@Url.Action("PTPlant","Home")">PT Plant Accessories</a></li>
+                        </ul>
+                    </div>
+
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-xl-8 col-lg-8">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">PT Plant Accessories</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Hot Water Generator</h5>
+                            <p>
+                                Neocol Hot Water Generator is modern and fuel efficient heating system provided for chemical heating in pre treatment plants. The heat is being transferred with the help of coils or PHE. The Hot Water Generators are provided either with HSD Fired or Gas fired burners.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Air Agitation System</h5>
+                            <p>
+                                Neocol Air Agitation System consists of Rotary Blower and air distribution piping. The Blower is designed to provide sufficient quantity of air at required static pressure, with optimum utilization of power. The air distribution piping consists of specially designed air distribution grid and piping with control valve etc. to provide uniform air agitation throughout cross section of tank.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Water Drying Oven</h5>
+                            <p>
+                                Neocol Water Drying Oven is provided for drying the components after Pre-Treatment Process and before painting/powder coating process. WDO is provided with electrical heating system or HSD/Gas fired heating system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Oil Skimmer System</h5>
+                            <p>
+                                Neocol Oil Skimmer System is provided for removing the oil layer from the degreasing solution of degreasing process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Sludge Removal System</h5>
+                            <p>
+                                Neocol Sludge Removal System is provided to remove sludge from phosphating process of pre treatment plant. The System consists of Lamella type clarifier and / or filter press according to the need.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Fume Scrubber System</h5>
+                            <p>
+                                The system consists of high pressure blower and vertical bed packed scrubber with ducts and chimney. The system is provided to remove hazardous fumes generated in Pre- Treatment plant. The scrubber system has a wet treatment mechanism to detoxify fumes before releasing it in environment
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Effluent Treatment Plant</h5>
+                            <p>
+                                ETP is a facility which is required to treat effluent or polluted fluid coming from various stages of pre treatment plant and re utilize the treated water.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="page-slider">
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid" src="~/img/projects/project1.jpg" alt="project-slider-image" />
+                        </div>
+
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid" src="~/img/projects/project2.jpg" alt="project-slider-image" />
+                        </div>
+                    </div><!-- Page slider end -->
+
+                    <div class="gap-40"></div>
+
+                    <!--2nd row end -->
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section>
+
+<partial name="_Footer" />
+
+<!-- Process Section -->
+
+@section Script{
+    <!-- Slick Carousel -->
+    <script src="~/lib/slick/slick.min.js"></script>
+    <script src="~/lib/slick/slick-animation.min.js"></script>
+    <script src="~/js/Slider.js"></script>
+}

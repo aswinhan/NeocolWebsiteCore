@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewData["Title"] = "Highlights & Infrastructure";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_NavBar" />
+
+<div id="banner-area" class="banner-area">
+    <img class="banner-area" src="~/img/banner/banner1.jpg">
+
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">@ViewBag.Title</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a>About Us</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div>
+
+    <!-- Banner text end -->
+</div><!-- Banner area end -->
+<!-- Process Section -->
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-3 col-lg-4">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Highlights & Infrastructure</h3>
+                        <ul class="nav service-menu">
+                            <li><a href="@Url.Action("Commitments","Home")">Our Commitments</a></li>
+                            <li class="active"><a href="@Url.Action("Highlights","Home")">Highlights & Infrastructure</a></li>
+                            <li ><a href="@Url.Action("Environment","Home")">Environment & Safety</a></li>
+                        </ul>
+                    </div>
+
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-xl-8 col-lg-8">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Highlights & Infrastructure</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Our strength is our family with young and energetic engineers and artist, whose ideas and knowledge is been carefully developed with innovation and commitment towards the vision and contribute to preserve environment for future generation.
+                            </p>
+                            <p>
+                                Ever actively neocol commit to invest a part of its profit in plantation to serve the nature and motivate to end the war against global warming.
+                            </p>
+
+                            <h3>Highlights</h3>
+                            <ul class="list-arrow">
+                                <li>90 mtr floor mount conveyorised oven with multiple colour online booth.</li>
+                                <li>110 mtr camel back conveyorised oven with online booth.</li>
+                                <li>Multicolour offline booth.</li>
+                                <li>Batch HPC oven (CPH Type)(14ft.Length 6ft.Width 8ft.Height).</li>
+                                <li>Batch HPC oven (CPH Type)(6ft.Length 4ft.Width 4ft.Height).</li>
+                                <li>Surface Pre-treatment Facility Fe/N Fe (ROHS compatible).</li>
+                                <li>Electrostatic Powder Coating Equipment’s.</li>
+                                <li>Laboratory facility with Imported Testing Equipment’s.</li>
+                                <li>Generator Backup 24/7.</li>
+                                <li>Effluent Treatment Plant 5Kld.</li>
+                                <li>DM water plant 5Kld.</li>
+
+                            </ul>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Infrastructure</h3>
+                            <ul class="list-arrow">
+                                <li>ISO 9001/2015 certified organization.</li>
+                                <li>Tamilnadu Pollution Control Board Approved organization.</li>
+                                <li>Hazardous Waste management Approved by (TNPCB).</li>
+                                <li>Paint and coating technology Certified Professionals.</li>
+                                <li>Quality Inspector Certified Professionals.</li>
+                                <li>Availability of process Technical Support 24/7.</li>
+                                <li>Maintenance Engineer and Spare Backup Support 24/7.</li>
+                                <li>Laboratory Analysis 24/7.</li>
+                                <li>Power Back Up 24/7.</li>
+                            </ul>
+                        </div><!-- col end -->
+                    </div>
+
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="page-slider">
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid" src="~/img/projects/project1.jpg" alt="project-slider-image" />
+                        </div>
+
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid" src="~/img/projects/project2.jpg" alt="project-slider-image" />
+                        </div>
+                    </div><!-- Page slider end -->
+
+                    <div class="gap-40"></div>
+
+                    <!--2nd row end -->
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section>
+
+<partial name="_Footer" />
+
+<!-- Process Section -->
+
+@section Script{
+    <!-- Slick Carousel -->
+    <script src="~/lib/slick/slick.min.js"></script>
+    <script src="~/lib/slick/slick-animation.min.js"></script>
+    <script src="~/js/Slider.js"></script>
+}
+
